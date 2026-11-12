@@ -34,6 +34,8 @@ if __name__ == "__main__":
 
 sudo apt update && sudo apt install default-jdk -y
 
+wget https://dlcdn.apache.org/hadoop/common/hadoop-3.4.2/hadoop-3.4.2.tar.gz
+
 export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
 
 export HADOOP_HOME=$HOME/Downloads/hadoop-3.4.2

@@ -16,3 +16,16 @@ sudo -u oneadmin oneuser show
 http://localhost:2616/fireedge/sunstone
 
 sudo cat /var/lib/one/.one/one_auth
+
+
+
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return "Hello!"
+
+if __name__ == "__main__":
+    app.run(debug=True)
